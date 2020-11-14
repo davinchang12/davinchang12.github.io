@@ -1,0 +1,108 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Davin's Website</title>
+		<link rel="stylesheet" href="style.css"/> 
+		<link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Livvic|Montserrat|Raleway&display=swap" rel="stylesheet"/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(document).ready( function(){
+				$(window).scroll( function(){
+					var scroll = $(window).
+
+					scrollTop();
+
+					$('.fadein').each( function(i) {
+						if( scroll > 450){
+							$('.fadein').addClass('fadein-add');
+						} 
+						else if(scroll > 901){
+							$(this).addClass('fadein-add')
+						}
+						else{
+							$(this).removeClass('fadein-add');
+						}
+					});
+
+					
+					if(scroll > 500){
+						$('.header').addClass("header-change-color");
+					}
+					else{
+						$('.header').removeClass("header-change-color");
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="main-img">
+			<div class="text">
+				<p>Hello!<b style="font-size:50px;"> I'm Davin.</b></br></br> Welcome to </br> <b style="font-size:50px;">my Portfolio.</b></p>
+			</div>
+		</div>
+		<nav>
+			<div class="header">
+				<h1><a href="#">Davin</a></h1>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#photography">Photography</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<div class="fadein">
+			<div class="about" id="about">
+				<div style="padding-top:100px;"></div>
+				<img src="my_picture.jpg" alt=""/>
+				<p><b>Hello!</b></br> I'm <b>Davin Chang</b>. I do college at Unika Soegijapranata Semarang now. I'm a new student at the college. At day I loves to code some stuff... sometimes stuck and may became crazy, and at night sometimes I play games with my friend to get rid of the crazy stuff that I have done at the morning. OK, that's all about me. Thanks for wasting your time to read my short stuff.</p>
+			</div>
+		</div>
+
+		<div class="fadein">
+			<div class="photography" id="photography">
+				<img src="landscape.jpeg"/>
+				<img src="mountain_view2.jfif"/>
+				<img src="night_landscape.jpeg"/>
+			</div>
+		</div>
+
+		<div class="fadein">
+			<div class="skills" id="skills">
+				<div style="padding-top:100px;"></div>
+				<h2>My Skills</h2>
+				<ul>
+					<li>HTML <br/> <progress min="0" max="100" value="60"></progress></li>
+					<li>Python <br/> <progress min="0" max="100" value="35"></progress></li>
+					<li>Java <br/><progress min="0" max="100" value="20"></progress></li>
+					<li>C<br/><progress min="0" max="100" value="5"></progress></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<footer>
+			<div class="fadein">
+				<div class="contact" id="contact">
+					<h3>Contact</h3>
+					<p>E-mail : <a>xxxxxxx@gmail.com</a></p>
+					<p>Phone  : xxxx-xxxx-xxx</p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
+
+
+
+
+
+<!--<iframe src="E:\Programming File\Website\testFadeIn.html" style="width: 100%; border:none"></iframe> -->
+
+<!--<li><a href="E:\Programming File\Website\testFadeIn.html#test">About</a></li> -->
