@@ -73,10 +73,10 @@ body{
 
 /*Main Image*/
 .main-img{
-	background-image: url("img/evening_view.jpg");
+	background: url("img/evening_view.jpg");
 	background-attachment: fixed;
 	background-size: cover;
-	height:100%;
+	height:100vh;
 	width:100%;
 }
 
